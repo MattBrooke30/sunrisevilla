@@ -1,0 +1,287 @@
+@import '_variables.scss';
+body{
+	background: $brown;
+}
+header{
+	height: 75px;
+	background: $brown;
+	position: relative;
+	z-index: 99;
+	.logo, .menu{
+		display: inline-block;
+	}
+	.menu{
+		vertical-align: top;
+		li{
+			display: inline-block;
+			list-style-type: none;
+			border-left: 1px solid#fff;
+			padding: 26px 15px;
+			font-size: 14px;
+			position: relative;
+			&:last-child{
+				margin-right: 0;
+			}
+			&.rates-reservations{
+				background: url(/wp-content/themes/sunrise-villa/assets/img/rates-button.png) no-repeat center;
+			}
+			a{
+				color: #fff;
+				text-transform: uppercase;
+			}
+			&:hover .sub-menu{
+				display: block;
+			}
+		}
+	}
+	.wrap{
+		width: 1480px;
+		margin: 0 auto;
+	}
+	.sub-menu{
+		display: none;
+		position: absolute;
+		margin: 0;
+		width: 130%;
+		left: -10%;
+		top: 70px;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.8);
+		z-index: 9;
+		border-radius: 15px;
+		li{
+			display: block;
+			border: none;
+			padding: 5px 0;
+			font-size: 12px;
+			border-bottom: 1px solid #e9a39a;
+			width: 65%;
+			margin: 0 auto !important;
+			a{
+				color: $brown;
+			}
+		}
+	}
+	.menu-button{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 25px;
+		display: none;
+	}
+}
+.cycle-slideshow{
+	overflow: hidden;
+	z-index: 9;
+	img, .slide{
+		width: 100%;
+	}
+}
+#content{
+	&.no-slider{
+		margin-top: 200px;
+	}
+	.wrap{
+		width: 1300px;
+		margin: 10px auto 0 auto;
+	}
+	.content-area, .sidebar{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.sidebar{
+		width: 385px;
+		margin-right: 35px;
+	}
+	.content-area{
+		width: 875px;
+		float: none;
+		padding: 0;
+	}
+	.box{
+		background: #fff;
+		margin: 10px auto;
+		&.top{
+			.col-1, .col-2{
+				display: inline-block;
+				vertical-align: top;
+			}
+			.col-1{
+				width: 840px;
+				padding: 45px;
+				margin-right: 3px;
+				h1{
+					text-transform: uppercase;
+					margin: 0;
+				}
+			}
+		}
+		&.map{
+			text-align: center;
+			padding-top: 15px;
+		}
+		&.contact{
+			text-align: center;
+			h2{
+				color: $brown;
+				text-transform: uppercase;
+				font-size: 35px;
+			}
+			.phone, .email{
+				color: #009d83;
+				font-size: 20px;
+				img{
+					padding-right: 10px;
+				}
+			}
+			a.link{
+				display: block;
+				color: $brown;
+			}
+			.social{
+				padding: 15px 0;
+				a{
+					margin-right: 10px;
+				}
+			}
+		}
+		&.letter{
+			p{
+				padding: 15px;
+				max-height: 300px;
+				overflow-y: scroll;
+			}
+			h2{
+				padding: 0 15px;
+				text-transform: uppercase;
+				font-size: 35px;
+			}
+		}
+		&.info{
+			padding: 15px;
+			max-height: 400px;
+			overflow-y: scroll;
+		}
+	}
+}
+a.button{
+	display: inline-block;
+	background: #e3e3e3;
+	color: #88cbc5;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.page-main-content{
+	width: 795px;
+	background: #fff;
+	padding: 20px 40px;
+	margin-right: 35px;
+}
+.page-sidebar{
+	width: 385px;
+	.widget{
+		background: #fff;
+		text-align: center;
+		&.int-menu{
+			padding: 20px 0;
+			a{
+				color: $brown;
+			}
+			li{
+				display: block;
+				border-top: 1px solid $brown;
+				width: 70%;
+				margin: 0 auto;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+.page-main-content, .page-sidebar{
+	display: inline-block;
+	vertical-align: top;
+}
+.gallery-selection{
+	background: rgba(255,255,255,.8);
+	.wrap{
+		width: 1170px !important;
+		margin: 0 auto;
+		padding: 25px 0;
+	}
+	.gallery-box{
+		width: 365px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		margin-right: 34px;
+		&:nth-child(3n+3){
+			margin-right: 0;
+		}
+		h2{
+			color: #d03c28;
+			font-size: 40px;
+			font-weight: normal;
+		}
+	}
+}
+.page-title{
+	color: #fff;
+	font-size: 40px;
+}
+.pager.cycle-slideshow{
+	margin-top: 20px;
+}
+.carousel-slide{
+	width: 243px;
+	margin-right: 1px;
+	img{
+		border-top: 20px solid #fff;
+		border-bottom: 20px solid #fff;
+		border-left: 10px solid #fff;
+		border-right: 20px solid #fff;
+	}
+}
+.single-gallery{
+	width: 1190px;
+	margin: 40px auto;
+}
+.current-image{
+	text-align: center;
+	img{
+		width: 96.7%;
+		border: 20px solid #fff;
+	}
+}
+.footer{
+	background: #655555;
+	text-align: center;
+	color: #fff;
+	font-size: 27px;
+	text-transform: uppercase;
+	padding: 30px 0;
+	.wrap div{
+		padding-bottom: 10px;
+		&:last-child{
+			padding-bottom: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import '_responsive.scss';

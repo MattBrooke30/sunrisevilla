@@ -1,0 +1,172 @@
+@media screen and (max-width: 1500px){
+	header{
+		.wrap{
+			width: 100%;
+		}
+		.menu{
+			li{
+				padding: 26px 1%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1430px){
+	header{
+		height: 160px;
+		.menu{
+			width: 85%;
+			li{
+				border: none;
+				vertical-align: middle;
+				text-align: center;
+				font-size: 13px;
+				.sub-menu li{
+					padding: 15px 10px;
+					width: 80%;
+				}
+			}
+		}
+		#menu-main{
+			width: 100%;
+			padding-top: 40px;
+		}
+	}
+	.logo{
+		width: 13%;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 1300px){
+	#content{
+		.wrap{
+			width: 100%;
+			.box{
+				.col-1{
+					width: 63%;
+					margin-right: 0.2%;
+				}
+				.col-2{
+					width: 28%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.content-area{
+			width: 60%;
+			img{
+				width: 100%;
+			}
+		}
+		.sidebar{
+			width: 36%;
+			margin-right: 3%;
+		}
+		.page-main-content{
+			width: 58%;
+			margin-right: 3%;
+		}
+		.page-sidebar{
+			width: 30%;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px){
+	#content{
+		.wrap{
+			.box{
+				.col-1, .col-2{
+					width: 85%;
+					display: block;
+					margin: 0 auto;
+					text-align: center;
+					img{
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 940px){
+	#content{
+		.page-main-content, .page-sidebar{
+			width: 78%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: 880px){
+	header{
+		height: auto;
+		.menu{
+			display: none;
+			position: absolute;
+			top: 0;
+			background: $brown;
+			margin: 0 auto;
+			width: 100%;
+			li{
+				display: block;
+				padding: 15px 0;
+				.sub-menu{
+					position: relative;
+					width: 100%;
+					left: 0;
+					margin-top: -55px;
+					li{
+						width: 100%;
+						padding: 0;
+					}
+				}
+			}
+		}
+		.menu-button{
+			display: block;
+		}
+		.logo{
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+			img{
+				width: 50%;
+			}
+		}
+	}
+	#content{
+		.sidebar, .content-area{
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		.box.top .col-1{
+			padding: 45px 0;
+		}
+		.box{
+			&.letter, &.info{
+				max-height: none;
+					overflow-y: visible;
+				p{
+					max-height: none;
+					overflow-y: visible;
+				}
+			}
+			&.map{
+				display: none;
+			}
+		}
+	}
+	#content .wrap .box .col-2 img{
+		width: 100%;
+	}
+}
